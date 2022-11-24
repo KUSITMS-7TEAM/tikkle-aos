@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.challengeFragment -> {
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.main_frm, HomeChallengeFragment())
+                        .replace(R.id.main_frm, ChallengeFragment())
                         .commitAllowingStateLoss()
                     return@setOnItemSelectedListener true
                 }

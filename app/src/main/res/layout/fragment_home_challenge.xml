@@ -58,7 +58,7 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="?attr/actionBarSize">>
+            android:layout_marginTop="?attr/actionBarSize">
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -94,24 +94,25 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/btn_challenge"
+                    android:id="@+id/btnConsumptionReview"
                     android:layout_width="87dp"
                     android:layout_height="44dp"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="4dp"
-                    android:src="@drawable/btn_challenge"
+                    android:src="@drawable/btn_consumption_noselect"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
                 <ImageView
-                    android:id="@+id/btnConsumptionReview"
+
+                    android:id="@+id/btn_challenge"
                     android:layout_width="87dp"
                     android:layout_height="44dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="4dp"
-                    android:src="@drawable/btn_consumption_noselect"
-                    app:layout_constraintStart_toEndOf="@+id/btn_challenge"
+                    android:src="@drawable/btn_challenge"
+                    app:layout_constraintStart_toEndOf="@+id/btnConsumptionReview"
                     app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
                 <ImageView
@@ -477,7 +478,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:font="@font/pretendardsemibold"
-                    android:text="0"
+                    android:text="3"
                     android:textColor="@color/main_Black"
                     android:textSize="12sp"
                     app:layout_constraintStart_toEndOf="@+id/textChallengeCount1"
@@ -501,7 +502,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:font="@font/pretendardsemibold"
-                    android:text="0"
+                    android:text="1"
                     android:textColor="@color/main_Black"
                     android:textSize="12sp"
                     app:layout_constraintStart_toEndOf="@+id/textChallengeCount3"
@@ -521,8 +522,8 @@
 
                 <FrameLayout
                     android:id="@+id/challengeList"
-                    android:layout_width="319dp"
-                    android:layout_height="109dp"
+                    android:layout_width="340dp"
+                    android:layout_height="140dp"
                     android:layout_marginTop="10dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -531,7 +532,7 @@
                     <androidx.viewpager2.widget.ViewPager2
                         android:id="@+id/viewpager"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="130dp"
                         android:layout_gravity="center"
                         android:clipChildren="false"
                         android:clipToPadding="false"
@@ -543,7 +544,6 @@
                     android:id="@+id/textChallengeDetail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
                     android:layout_marginLeft="27dp"
                     android:font="@font/pretendardsemibold"
                     android:text="소비 방어 챌린지"
@@ -571,7 +571,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:font="@font/pretendardsemibold"
-                    android:text="100"
+                    android:text="6"
                     android:textColor="@color/main_Gray"
                     android:textSize="12sp"
                     app:layout_constraintStart_toEndOf="@+id/textChallengeDetailCount1"
@@ -589,17 +589,81 @@
                     app:layout_constraintStart_toEndOf="@+id/textChallengeDetailCount2"
                     app:layout_constraintTop_toBottomOf="@+id/textChallengeDetail" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recyclerHorizon"
-                    android:layout_width="99dp"
-                    android:layout_height="140dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_weight="1"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textChallengeDetailCount1"
-                    tools:ignore="SpeakableTextPresentCheck"
-                    tools:listitem="@layout/item_challenge_detail" />
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textChallengeDetailCount3"
+                    tools:layout_editor_absoluteX="-199dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="20dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/challenge1" />
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginRight="20dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/challenge4" />
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginRight="20dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/challenge2" />
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginRight="20dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/challenge3" />
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginRight="20dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/challenge5" />
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginRight="20dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/challenge6" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+                <!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/recyclerHorizon"-->
+<!--                    android:layout_width="99dp"-->
+<!--                    android:layout_height="140dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/textChallengeDetailCount1"-->
+<!--                    tools:ignore="SpeakableTextPresentCheck"-->
+<!--                    tools:listitem="@layout/item_challenge_detail" />-->
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>

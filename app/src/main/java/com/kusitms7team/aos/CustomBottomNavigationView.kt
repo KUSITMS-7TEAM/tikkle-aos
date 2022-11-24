@@ -37,7 +37,7 @@ class CustomBottomNavigationView : BottomNavigationView {
 
     private fun init() {
         mPaint.style = Paint.Style.FILL_AND_STROKE
-        mPaint.color = ContextCompat.getColor(context, R.color.little_orange)
+        mPaint.color = ContextCompat.getColor(context, R.color.navigation)
         setBackgroundColor(Color.TRANSPARENT)
     }
 

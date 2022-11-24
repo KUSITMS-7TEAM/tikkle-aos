@@ -13,6 +13,7 @@ import com.kusitms7team.aos.databinding.FragmentFeedBinding
 class FeedFragment : Fragment() {
 
     lateinit var binding: FragmentFeedBinding
+    lateinit var mainActivity: MainActivity
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -26,17 +27,27 @@ class FeedFragment : Fragment() {
                 container,
                 false
             )
+        mainActivity = context as MainActivity
 
-            val mActivity = activity as MainActivity
-            val btn_next = rootView.findViewById<ImageButton>(R.id.title2)
-
-            btn_next.setOnClickListener {
-                (activity as MainActivity).changeFeedFragment(2)
+////            val mActivity = activity as MainActivity
+//            val btn_next = rootView.findViewById<ImageButton>(R.id.title2)
+//
+//            binding.title2.setOnClickListener {
+//                (context as MainActivity).changeFeedFragment(2)
+//            }
+//
+//            return rootView
+//
+//        //commit용
+        return binding.root
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        with (binding) {
+            //버튼을 누르면 SecondFragment로 이동
+            binding.title2.setOnClickListener {
+                mainActivity.changeFeedFragment(2)
             }
-
-            return rootView
-
-        //commit용
-
+        }
     }
 }

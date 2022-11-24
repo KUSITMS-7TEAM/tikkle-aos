@@ -3,593 +3,593 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-<FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".FeedFragment">
-
-    <!-- 메뉴바 -->
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/icLogo"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="15dp"
-            android:background="@color/main_white"
-            android:scaleType="centerInside"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_tikkle_logo_2"
-            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
-            tools:layout_editor_absoluteY="5dp" />
-
-        <ImageButton
-            android:id="@+id/icBell"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:background="@color/main_white"
-            android:scaleType="centerInside"
-            app:layout_constraintBottom_toTopOf="@+id/imageView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/btn_above_navigation_bell_unactivated"
-            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="413dp"
-            android:layout_height="5dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/icLogo"
-            app:srcCompat="@drawable/ic_title_line" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="parent">
+        tools:context=".FeedFragment">
 
-        <TextView
-            android:id="@+id/textIntroduction"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:paddingLeft="27dp"
-            android:font="@font/pretendardsemibold"
-            android:text="다른 사람들이 진행 중인 챌린지를 구경하세요!"
-            android:textColor="@color/main_Black"
-            android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text2" />
-
-        <TextView
-            android:id="@+id/text2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="27dp"
-            android:layout_marginTop="24dp"
-            android:font="@font/pretendardsemibold"
-            android:text="피드"
-            android:textColor="@color/main_Black"
-            android:textSize="19sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
-            android:id="@+id/enterSubject"
-            android:layout_width="360dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/bg_item_challenge_prove_input_border"
-            android:backgroundTint="@color/gray_900"
-            android:fontFamily="@font/pretendardmedium"
-            android:hint="제목을 입력하세요."
-            android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textIntroduction"
-            tools:ignore="TouchTargetSizeCheck" />
-
-        <ImageButton
-            android:id="@+id/btnSearch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="1dp"
-            android:layout_marginEnd="10dp"
-            android:background="@color/gray_900"
-            android:backgroundTint="@color/main_white"
-            android:src="@drawable/ic_search"
-            app:layout_constraintBottom_toBottomOf="@+id/enterSubject"
-            app:layout_constraintEnd_toEndOf="@+id/enterSubject"
-            app:layout_constraintTop_toTopOf="@+id/enterSubject"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
+        <!-- 메뉴바 -->
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout4"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/enterSubject">
+            app:layout_constraintTop_toTopOf="parent">
 
-            <ImageButton
-                android:id="@+id/btnCategorySaving"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/main_white"
-                android:backgroundTint="@color/main_white"
-                android:src="@drawable/btn_challenge_category"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/btnCategoryStudy"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/btnCategoryConsumption"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-            <TextView
-                android:id="@+id/textSaving"
-                android:layout_width="wrap_content"
+            <ImageView
+                android:id="@+id/icLogo"
+                android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:text="저축"
-                android:textSize="10dp"
-                android:textColor="#AB4A0B"
-                app:layout_constraintBottom_toBottomOf="@+id/btnCategorySaving"
-                app:layout_constraintEnd_toEndOf="@+id/btnCategorySaving"
-                app:layout_constraintStart_toStartOf="@+id/btnCategorySaving"
-                app:layout_constraintTop_toTopOf="@+id/btnCategorySaving" />
-
-            <ImageButton
-                android:id="@+id/btnCategoryStudy"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
                 android:background="@color/main_white"
-                android:backgroundTint="@color/main_white"
-                android:src="@drawable/btn_challenge_category"
+                android:scaleType="centerInside"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/btnCategoryInvestment"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/btnCategorySaving"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-            <TextView
-                android:id="@+id/textStudy"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="공부/자식"
-                android:textSize="10dp"
-                android:textColor="#AB4A0B"
-                app:layout_constraintBottom_toBottomOf="@+id/btnCategoryStudy"
-                app:layout_constraintEnd_toEndOf="@+id/btnCategoryStudy"
-                app:layout_constraintStart_toStartOf="@+id/btnCategoryStudy"
-                app:layout_constraintTop_toTopOf="@+id/btnCategoryStudy" />
-
-            <ImageButton
-                android:id="@+id/btnCategoryInvestment"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/main_white"
-                android:backgroundTint="@color/main_white"
-                android:src="@drawable/btn_challenge_category"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/btnCategoryEtc"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/btnCategoryStudy"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-            <TextView
-                android:id="@+id/textInvestment"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="투자"
-                android:textSize="10dp"
-                android:textColor="#AB4A0B"
-                app:layout_constraintBottom_toBottomOf="@+id/btnCategoryInvestment"
-                app:layout_constraintEnd_toEndOf="@+id/btnCategoryInvestment"
-                app:layout_constraintStart_toStartOf="@+id/btnCategoryInvestment"
-                app:layout_constraintTop_toTopOf="@+id/btnCategoryInvestment" />
-
-            <ImageButton
-                android:id="@+id/btnCategoryEtc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/main_white"
-                android:backgroundTint="@color/main_white"
-                android:src="@drawable/btn_challenge_category"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/btnCategoryInvestment"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-            <TextView
-                android:id="@+id/textEtc"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="기타"
-                android:textSize="10dp"
-                android:textColor="#AB4A0B"
-                app:layout_constraintBottom_toBottomOf="@+id/btnCategoryEtc"
-                app:layout_constraintEnd_toEndOf="@+id/btnCategoryEtc"
-                app:layout_constraintStart_toStartOf="@+id/btnCategoryEtc"
-                app:layout_constraintTop_toTopOf="@+id/btnCategoryEtc" />
-
-            <ImageButton
-                android:id="@+id/btnCategoryConsumption"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/main_white"
-                android:backgroundTint="@color/main_white"
-                android:src="@drawable/btn_challenge_category_enable"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/btnCategorySaving"
-                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                app:srcCompat="@drawable/ic_tikkle_logo_2"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+                tools:layout_editor_absoluteY="5dp" />
 
-            <TextView
-                android:id="@+id/textConsumption"
+            <ImageButton
+                android:id="@+id/icBell"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="소비/지출"
-                android:textSize="10dp"
-                android:textColor="@color/main_white"
-                app:layout_constraintBottom_toBottomOf="@+id/btnCategoryConsumption"
-                app:layout_constraintEnd_toEndOf="@+id/btnCategoryConsumption"
-                app:layout_constraintStart_toStartOf="@+id/btnCategoryConsumption"
-                app:layout_constraintTop_toTopOf="@+id/btnCategoryConsumption" />
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@color/main_white"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toTopOf="@+id/imageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/btn_above_navigation_bell_unactivated"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
-
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="413dp"
+                android:layout_height="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/icLogo"
+                app:srcCompat="@drawable/ic_title_line" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <ImageView
-            android:id="@+id/icBar"
-            android:layout_width="413dp"
-            android:layout_height="5dp"
-            android:layout_marginTop="15dp"
-            android:background="@color/gray_900"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
-            app:srcCompat="@drawable/ic_feed_divider" />
-
-        <TextView
-            android:id="@+id/textFeedCount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:paddingLeft="27dp"
-            android:text="2개의 게시물"
-            android:textColor="@color/main_Black"
-            android:textSize="10dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/icBar" />
-
-        <TextView
-            android:id="@+id/textFeedCount2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="185dp"
-            android:layout_marginTop="10dp"
-            android:text="최근 업로드순"
-            android:textColor="@color/main_Black"
-            android:textSize="10dp"
-            app:layout_constraintStart_toEndOf="@+id/textFeedCount"
-            app:layout_constraintTop_toBottomOf="@+id/icBar" />
-
-        <ImageButton
-            android:id="@+id/btnDropDown"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="9dp"
-            android:background="@color/main_white"
-            android:backgroundTint="@color/main_white"
-            android:src="@drawable/btn_drop_down"
-            app:layout_constraintStart_toEndOf="@+id/textFeedCount2"
-            app:layout_constraintTop_toBottomOf="@+id/icBar"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-        <ImageButton
-            android:id="@+id/btnPostType1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="11dp"
-            android:background="@color/main_white"
-            android:backgroundTint="@color/main_white"
-            android:src="@drawable/btn_post_type_1"
-            app:layout_constraintStart_toEndOf="@+id/btnDropDown"
-            app:layout_constraintTop_toBottomOf="@+id/icBar"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-        <ImageButton
-            android:id="@+id/btnPostType2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="9dp"
-            android:layout_marginRight="27dp"
-            android:background="@color/main_white"
-            android:backgroundTint="@color/main_white"
-            android:src="@drawable/btn_post_type_2"
-            app:layout_constraintStart_toEndOf="@+id/btnPostType1"
-            app:layout_constraintTop_toBottomOf="@+id/icBar"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-        <ImageView
-            android:id="@+id/icBar2"
-            android:layout_width="413dp"
-            android:layout_height="1dp"
-            android:layout_marginTop="33dp"
-            android:background="@color/gray_900"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/icBar"
-            app:srcCompat="@drawable/ic_feed_divider" />
-
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
             android:layout_width="match_parent"
-            android:layout_height="440dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/icBar2">
+            app:layout_constraintTop_toBottomOf="parent">
 
-            <!--
-            <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="409dp"
-                android:layout_height="438dp"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:layout_editor_absoluteX="1dp"
-                tools:listitem="@layout/fragment_feed_item"
-                tools:layout_editor_absoluteY="1dp" />
+            <TextView
+                android:id="@+id/textIntroduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="27dp"
+                android:font="@font/pretendardsemibold"
+                android:text="다른 사람들이 진행 중인 챌린지를 구경하세요!"
+                android:textColor="@color/main_Black"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text2" />
 
-                -->
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="27dp"
+                android:layout_marginTop="24dp"
+                android:font="@font/pretendardsemibold"
+                android:text="피드"
+                android:textColor="@color/main_Black"
+                android:textSize="19sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/enterSubject"
+                android:layout_width="360dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_item_challenge_prove_input_border"
+                android:backgroundTint="@color/gray_900"
+                android:fontFamily="@font/pretendardmedium"
+                android:hint="제목을 입력하세요."
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textIntroduction"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/gray_900"
+                android:backgroundTint="@color/main_white"
+                android:src="@drawable/ic_search"
+                app:layout_constraintBottom_toBottomOf="@+id/enterSubject"
+                app:layout_constraintEnd_toEndOf="@+id/enterSubject"
+                app:layout_constraintTop_toTopOf="@+id/enterSubject"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/content1"
-                android:layout_width="match_parent"
+                android:id="@+id/constraintLayout4"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="70dp"
-                >
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/enterSubject">
 
-                <TextView
-                    android:id="@+id/challengeName"
+                <ImageButton
+                    android:id="@+id/btnCategorySaving"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/pretendardmedium"
-                    android:text="#무지출챌린지"
-                    android:textColor="@color/main_Gray"
-                    android:textSize="9sp"
+                    android:background="@color/main_white"
+                    android:backgroundTint="@color/main_white"
+                    android:src="@drawable/btn_challenge_category"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btnCategoryStudy"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btnCategoryConsumption"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textSaving"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="저축"
+                    android:textSize="10dp"
+                    android:textColor="#AB4A0B"
+                    app:layout_constraintBottom_toBottomOf="@+id/btnCategorySaving"
+                    app:layout_constraintEnd_toEndOf="@+id/btnCategorySaving"
+                    app:layout_constraintStart_toStartOf="@+id/btnCategorySaving"
+                    app:layout_constraintTop_toTopOf="@+id/btnCategorySaving" />
+
+                <ImageButton
+                    android:id="@+id/btnCategoryStudy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/main_white"
+                    android:backgroundTint="@color/main_white"
+                    android:src="@drawable/btn_challenge_category"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btnCategoryInvestment"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btnCategorySaving"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textStudy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="공부/자식"
+                    android:textSize="10dp"
+                    android:textColor="#AB4A0B"
+                    app:layout_constraintBottom_toBottomOf="@+id/btnCategoryStudy"
+                    app:layout_constraintEnd_toEndOf="@+id/btnCategoryStudy"
+                    app:layout_constraintStart_toStartOf="@+id/btnCategoryStudy"
+                    app:layout_constraintTop_toTopOf="@+id/btnCategoryStudy" />
+
+                <ImageButton
+                    android:id="@+id/btnCategoryInvestment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/main_white"
+                    android:backgroundTint="@color/main_white"
+                    android:src="@drawable/btn_challenge_category"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btnCategoryEtc"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btnCategoryStudy"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textInvestment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="투자"
+                    android:textSize="10dp"
+                    android:textColor="#AB4A0B"
+                    app:layout_constraintBottom_toBottomOf="@+id/btnCategoryInvestment"
+                    app:layout_constraintEnd_toEndOf="@+id/btnCategoryInvestment"
+                    app:layout_constraintStart_toStartOf="@+id/btnCategoryInvestment"
+                    app:layout_constraintTop_toTopOf="@+id/btnCategoryInvestment" />
+
+                <ImageButton
+                    android:id="@+id/btnCategoryEtc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/main_white"
+                    android:backgroundTint="@color/main_white"
+                    android:src="@drawable/btn_challenge_category"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btnCategoryInvestment"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textEtc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="기타"
+                    android:textSize="10dp"
+                    android:textColor="#AB4A0B"
+                    app:layout_constraintBottom_toBottomOf="@+id/btnCategoryEtc"
+                    app:layout_constraintEnd_toEndOf="@+id/btnCategoryEtc"
+                    app:layout_constraintStart_toStartOf="@+id/btnCategoryEtc"
+                    app:layout_constraintTop_toTopOf="@+id/btnCategoryEtc" />
+
+                <ImageButton
+                    android:id="@+id/btnCategoryConsumption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/main_white"
+                    android:backgroundTint="@color/main_white"
+                    android:src="@drawable/btn_challenge_category_enable"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btnCategorySaving"
+                    app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageView
-                    android:id="@+id/img"
-                    android:layout_width="91dp"
-                    android:layout_height="91dp"
-                    android:layout_marginStart="25dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/img_ex"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/challengeName" />
-
-                <ImageView
-                    android:id="@+id/img2"
-                    android:layout_width="91dp"
-                    android:layout_height="91dp"
-                    android:layout_marginStart="25dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/post_image"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/challengeName2" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                 <TextView
-                    android:id="@+id/title"
+                    android:id="@+id/textConsumption"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginTop="6dp"
-                    android:fontFamily="@font/pretendardsemibold"
-                    android:text="오늘의 소비 방어를 소개합니다! "
-                    android:textColor="@color/main_Black"
-                    android:textSize="12dp"
-                    app:layout_constraintStart_toEndOf="@+id/img"
-                    app:layout_constraintTop_toBottomOf="@+id/date" />
+                    android:layout_height="match_parent"
+                    android:text="소비/지출"
+                    android:textSize="10dp"
+                    android:textColor="@color/main_white"
+                    app:layout_constraintBottom_toBottomOf="@+id/btnCategoryConsumption"
+                    app:layout_constraintEnd_toEndOf="@+id/btnCategoryConsumption"
+                    app:layout_constraintStart_toStartOf="@+id/btnCategoryConsumption"
+                    app:layout_constraintTop_toTopOf="@+id/btnCategoryConsumption" />
 
-                <!-- commit용 -->
-                <TextView
-                    android:id="@+id/title2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginTop="6dp"
-                    android:fontFamily="@font/pretendardsemibold"
-                    android:text="일주일에 한 번만 커피 먹기 실천했어요"
-                    android:textColor="@color/main_Black"
-                    android:textSize="12dp"
-                    app:layout_constraintStart_toEndOf="@+id/img2"
-                    app:layout_constraintTop_toBottomOf="@+id/date2" />
-
-                <TextView
-                    android:id="@+id/date"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginTop="20dp"
-                    android:fontFamily="@font/pretendardmedium"
-                    android:text="2022.11.11"
-                    android:textColor="@color/main_Gray"
-                    android:textSize="8dp"
-                    app:layout_constraintStart_toEndOf="@+id/img"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/date2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginTop="60dp"
-                    android:fontFamily="@font/pretendardmedium"
-                    android:text="2022.11.11"
-                    android:textColor="@color/main_Gray"
-                    android:textSize="8dp"
-                    app:layout_constraintStart_toEndOf="@+id/img2"
-                    app:layout_constraintTop_toBottomOf="@+id/text" />
-
-                <TextView
-                    android:id="@+id/text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginTop="6dp"
-                    android:fontFamily="@font/pretendardmedium"
-                    android:text="오늘은 엘피를 사는 것을 방어했다! 고민 끝에 엘피는 돈이 정\n말 많이 들기 때문에... 어쩔 수 없이 사지 않기로 했다..! 큰 ..."
-                    android:textColor="@color/gray_600"
-                    android:textSize="9dp"
-                    app:layout_constraintStart_toEndOf="@+id/img"
-                    app:layout_constraintTop_toBottomOf="@+id/title" />
-
-                <TextView
-                    android:id="@+id/text3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginTop="6dp"
-                    android:fontFamily="@font/pretendardmedium"
-                    android:text="커피 안 마시는 게 저한테 제일 어려운 일이었는데 드디어!!\n 커피 줄이기 실천했어요.. 안 먹다 버릇하니 그래도 좀 참아..."
-                    android:textColor="@color/gray_600"
-                    android:textSize="9dp"
-                    app:layout_constraintStart_toEndOf="@+id/img2"
-                    app:layout_constraintTop_toBottomOf="@+id/title2" />
-
-                <ImageView
-                    android:id="@+id/imgLikes"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="200dp"
-                    android:layout_marginTop="20dp"
-                    android:src="@drawable/icn_like_preview"
-                    app:layout_constraintStart_toEndOf="@+id/img2"
-                    app:layout_constraintTop_toBottomOf="@+id/text3" />
-
-                <ImageView
-                    android:id="@+id/imgLikes2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="200dp"
-                    android:layout_marginTop="20dp"
-                    android:src="@drawable/icn_like_preview"
-                    app:layout_constraintStart_toEndOf="@+id/img"
-                    app:layout_constraintTop_toBottomOf="@+id/text" />
-
-                <TextView
-                    android:id="@+id/countLikes"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="19dp"
-                    android:fontFamily="@font/pretendardmedium"
-                    android:text="15"
-                    android:textColor="@color/gray_600"
-                    android:textSize="8dp"
-                    app:layout_constraintStart_toEndOf="@+id/imgLikes"
-                    app:layout_constraintTop_toBottomOf="@+id/text3" />
-
-                <TextView
-                    android:id="@+id/countLikes3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="19dp"
-                    android:fontFamily="@font/pretendardmedium"
-                    android:text="2"
-                    android:textColor="@color/gray_600"
-                    android:textSize="8dp"
-                    app:layout_constraintStart_toEndOf="@+id/imgLikes2"
-                    app:layout_constraintTop_toBottomOf="@+id/text" />
-
-                <ImageView
-                    android:id="@+id/imgComments"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="220dp"
-                    android:layout_marginTop="20dp"
-                    android:src="@drawable/icn_chat_preview"
-                    app:layout_constraintStart_toEndOf="@+id/img"
-                    app:layout_constraintTop_toBottomOf="@+id/text" />
-
-                <ImageView
-                    android:id="@+id/imgComments2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="220dp"
-                    android:layout_marginTop="20dp"
-                    android:src="@drawable/icn_chat_preview"
-                    app:layout_constraintStart_toEndOf="@+id/img2"
-                    app:layout_constraintTop_toBottomOf="@+id/text3" />
-
-                <TextView
-                    android:id="@+id/countComments"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="19dp"
-                    android:fontFamily="@font/pretendardmedium"
-                    android:text="1"
-                    android:textColor="@color/gray_600"
-                    android:textSize="8dp"
-                    app:layout_constraintStart_toEndOf="@+id/imgComments"
-                    app:layout_constraintTop_toBottomOf="@+id/text" />
-
-                <TextView
-                    android:id="@+id/countComments2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="19dp"
-                    android:fontFamily="@font/pretendardmedium"
-                    android:text="2"
-                    android:textColor="@color/gray_600"
-                    android:textSize="8dp"
-                    app:layout_constraintStart_toEndOf="@+id/imgComments2"
-                    app:layout_constraintTop_toBottomOf="@+id/text3" />
-
-                <TextView
-                    android:id="@+id/challengeName2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginTop="20dp"
-                    android:fontFamily="@font/pretendardmedium"
-                    android:text="#무지출챌린지"
-                    android:textColor="@color/main_Gray"
-                    android:textSize="9sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/img" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-        </LinearLayout>
+            <ImageView
+                android:id="@+id/icBar"
+                android:layout_width="413dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/gray_900"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
+                app:srcCompat="@drawable/ic_feed_divider" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/textFeedCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="27dp"
+                android:text="2개의 게시물"
+                android:textColor="@color/main_Black"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/icBar" />
 
-</FrameLayout>
+            <TextView
+                android:id="@+id/textFeedCount2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="185dp"
+                android:layout_marginTop="10dp"
+                android:text="최근 업로드순"
+                android:textColor="@color/main_Black"
+                android:textSize="10dp"
+                app:layout_constraintStart_toEndOf="@+id/textFeedCount"
+                app:layout_constraintTop_toBottomOf="@+id/icBar" />
+
+            <ImageButton
+                android:id="@+id/btnDropDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:background="@color/main_white"
+                android:backgroundTint="@color/main_white"
+                android:src="@drawable/btn_drop_down"
+                app:layout_constraintStart_toEndOf="@+id/textFeedCount2"
+                app:layout_constraintTop_toBottomOf="@+id/icBar"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/btnPostType1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="11dp"
+                android:background="@color/main_white"
+                android:backgroundTint="@color/main_white"
+                android:src="@drawable/btn_post_type_1"
+                app:layout_constraintStart_toEndOf="@+id/btnDropDown"
+                app:layout_constraintTop_toBottomOf="@+id/icBar"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/btnPostType2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginRight="27dp"
+                android:background="@color/main_white"
+                android:backgroundTint="@color/main_white"
+                android:src="@drawable/btn_post_type_2"
+                app:layout_constraintStart_toEndOf="@+id/btnPostType1"
+                app:layout_constraintTop_toBottomOf="@+id/icBar"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/icBar2"
+                android:layout_width="413dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="33dp"
+                android:background="@color/gray_900"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/icBar"
+                app:srcCompat="@drawable/ic_feed_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="440dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/icBar2">
+
+                <!--
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="409dp"
+                    android:layout_height="438dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:listitem="@layout/fragment_feed_item"
+                    tools:layout_editor_absoluteY="1dp" />
+
+                    -->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/content1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/challengeName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/pretendardmedium"
+                        android:text="#무지출챌린지"
+                        android:textColor="@color/main_Gray"
+                        android:textSize="9sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="91dp"
+                        android:layout_height="91dp"
+                        android:layout_marginStart="25dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_ex"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/challengeName" />
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="91dp"
+                        android:layout_height="91dp"
+                        android:layout_marginStart="25dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/post_image"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/challengeName2" />
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/pretendardsemibold"
+                        android:text="오늘의 소비 방어를 소개합니다! "
+                        android:textColor="@color/main_Black"
+                        android:textSize="12dp"
+                        app:layout_constraintStart_toEndOf="@+id/img"
+                        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+                    <!-- commit용 -->
+                    <TextView
+                        android:id="@+id/title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/pretendardsemibold"
+                        android:text="일주일에 한 번만 커피 먹기 실천했어요"
+                        android:textColor="@color/main_Black"
+                        android:textSize="12dp"
+                        app:layout_constraintStart_toEndOf="@+id/img2"
+                        app:layout_constraintTop_toBottomOf="@+id/date2" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/pretendardmedium"
+                        android:text="2022.11.11"
+                        android:textColor="@color/main_Gray"
+                        android:textSize="8dp"
+                        app:layout_constraintStart_toEndOf="@+id/img"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/date2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="60dp"
+                        android:fontFamily="@font/pretendardmedium"
+                        android:text="2022.11.11"
+                        android:textColor="@color/main_Gray"
+                        android:textSize="8dp"
+                        app:layout_constraintStart_toEndOf="@+id/img2"
+                        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+                    <TextView
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/pretendardmedium"
+                        android:text="오늘은 엘피를 사는 것을 방어했다! 고민 끝에 엘피는 돈이 정\n말 많이 들기 때문에... 어쩔 수 없이 사지 않기로 했다..! 큰 ..."
+                        android:textColor="@color/gray_600"
+                        android:textSize="9dp"
+                        app:layout_constraintStart_toEndOf="@+id/img"
+                        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/pretendardmedium"
+                        android:text="커피 안 마시는 게 저한테 제일 어려운 일이었는데 드디어!!\n 커피 줄이기 실천했어요.. 안 먹다 버릇하니 그래도 좀 참아..."
+                        android:textColor="@color/gray_600"
+                        android:textSize="9dp"
+                        app:layout_constraintStart_toEndOf="@+id/img2"
+                        app:layout_constraintTop_toBottomOf="@+id/title2" />
+
+                    <ImageView
+                        android:id="@+id/imgLikes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="200dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/icn_like_preview"
+                        app:layout_constraintStart_toEndOf="@+id/img2"
+                        app:layout_constraintTop_toBottomOf="@+id/text3" />
+
+                    <ImageView
+                        android:id="@+id/imgLikes2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="200dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/icn_like_preview"
+                        app:layout_constraintStart_toEndOf="@+id/img"
+                        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+                    <TextView
+                        android:id="@+id/countLikes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="19dp"
+                        android:fontFamily="@font/pretendardmedium"
+                        android:text="15"
+                        android:textColor="@color/gray_600"
+                        android:textSize="8dp"
+                        app:layout_constraintStart_toEndOf="@+id/imgLikes"
+                        app:layout_constraintTop_toBottomOf="@+id/text3" />
+
+                    <TextView
+                        android:id="@+id/countLikes3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="19dp"
+                        android:fontFamily="@font/pretendardmedium"
+                        android:text="2"
+                        android:textColor="@color/gray_600"
+                        android:textSize="8dp"
+                        app:layout_constraintStart_toEndOf="@+id/imgLikes2"
+                        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+                    <ImageView
+                        android:id="@+id/imgComments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="220dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/icn_chat_preview"
+                        app:layout_constraintStart_toEndOf="@+id/img"
+                        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+                    <ImageView
+                        android:id="@+id/imgComments2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="220dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/icn_chat_preview"
+                        app:layout_constraintStart_toEndOf="@+id/img2"
+                        app:layout_constraintTop_toBottomOf="@+id/text3" />
+
+                    <TextView
+                        android:id="@+id/countComments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="19dp"
+                        android:fontFamily="@font/pretendardmedium"
+                        android:text="1"
+                        android:textColor="@color/gray_600"
+                        android:textSize="8dp"
+                        app:layout_constraintStart_toEndOf="@+id/imgComments"
+                        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+                    <TextView
+                        android:id="@+id/countComments2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="19dp"
+                        android:fontFamily="@font/pretendardmedium"
+                        android:text="2"
+                        android:textColor="@color/gray_600"
+                        android:textSize="8dp"
+                        app:layout_constraintStart_toEndOf="@+id/imgComments2"
+                        app:layout_constraintTop_toBottomOf="@+id/text3" />
+
+                    <TextView
+                        android:id="@+id/challengeName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/pretendardmedium"
+                        android:text="#무지출챌린지"
+                        android:textColor="@color/main_Gray"
+                        android:textSize="9sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/img" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
 </layout>
