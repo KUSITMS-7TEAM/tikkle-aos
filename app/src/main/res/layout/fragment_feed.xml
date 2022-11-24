@@ -418,6 +418,7 @@
                     app:layout_constraintStart_toEndOf="@+id/img"
                     app:layout_constraintTop_toBottomOf="@+id/date" />
 
+                <!-- commit용 -->
                 <TextView
                     android:id="@+id/title2"
                     android:layout_width="wrap_content"

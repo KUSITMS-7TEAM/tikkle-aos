@@ -8,6 +8,7 @@
     android:layout_height="match_parent"
     tools:context=".ChallengeDetailFragment">
 
+    <!-- commit용 -->
     <!-- 메뉴바 -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
