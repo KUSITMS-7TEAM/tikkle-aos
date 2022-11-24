@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    >
+
+<FrameLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ChallemgeProve2Fragment">
@@ -143,7 +148,7 @@
         <EditText
             android:id="@+id/enterContents"
             android:layout_width="360dp"
-            android:layout_height="220dp"
+            android:layout_height="150dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/bg_item_challenge_prove_input_border"
             android:backgroundTint="@color/gray_900"
@@ -182,7 +187,7 @@
             android:id="@+id/btnNext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="20dp"
             android:background="@color/main_white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -193,3 +198,5 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
+
+</layout>
