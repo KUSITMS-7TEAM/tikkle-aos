@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import android.view.WindowManager
 import android.widget.Toast
+import androidx.fragment.app.FragmentManager
 import com.kusitms7team.aos.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -90,4 +91,48 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    fun changeProveFragment(index: Int){
+        when(index){
+            1 -> {
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.main_frm, ChallemgeProve1Fragment())
+                    .commitAllowingStateLoss()
+
+            }
+
+            2 -> {
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.main_frm, ChallemgeProve2Fragment())
+                    .commitAllowingStateLoss()
+            }
+
+            3 -> {
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.main_frm, ChallemgeProve3Fragment())
+                    .commitAllowingStateLoss()
+            }
+
+        }
+    }
+
+    fun changeFeedFragment(index: Int) {
+        when (index) {
+            1 -> {
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.main_frm, FeedFragment())
+                    .commitAllowingStateLoss()
+            }
+
+            2 -> {
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.main_frm, ChallengeDetailFragment())
+                    .commitAllowingStateLoss()
+            }
+        }
+    }
 }

@@ -12,23 +12,32 @@ import androidx.databinding.DataBindingUtil
 import com.kusitms7team.aos.databinding.FragmentChallemgeProve1Binding
 import java.util.*
 
+
 class ChallemgeProve1Fragment : Fragment() {
 
     lateinit var binding: FragmentChallemgeProve1Binding
-    lateinit var challengeName1 : ConstraintLayout
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val rootView = inflater.inflate(R.layout.fragment_challemge_prove1, container, false)
         binding = DataBindingUtil.inflate(
             inflater,
             com.kusitms7team.aos.R.layout.fragment_challemge_prove1,
             container,
             false
         )
-        return binding.root
+
+        val mActivity = activity as MainActivity
+        val btn_next = rootView.findViewById<ImageButton>(R.id.btnMoneyNext)
+
+        btn_next.setOnClickListener{
+            (activity as MainActivity).changeProveFragment(2)
+        }
+
+        return rootView
 
     }
 }
