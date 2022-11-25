@@ -39,5 +39,4 @@ class ChallengeConsumptionFragment : Fragment() {
             }
         }
     }
-
 }

@@ -158,4 +158,22 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
+    fun changeMypageFragment(index: Int) {
+        when (index) {
+            1 -> {
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.main_frm, MypageFragment())
+                    .commitAllowingStateLoss()
+            }
+
+            2 -> {
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.main_frm, MyPageBadgeFragment())
+                    .commitAllowingStateLoss()
+            }
+        }
+    }
 }

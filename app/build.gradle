@@ -87,4 +87,7 @@ dependencies {
     def lifecycle_version = "2.6.0-alpha03"
     // ViewModel
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+
+    //Tab
+
 }
