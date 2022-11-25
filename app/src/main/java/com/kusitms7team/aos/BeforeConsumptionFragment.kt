@@ -85,7 +85,7 @@ class BeforeConsumptionFragment : Fragment() {
         val day = cal.get(Calendar.DATE).toString()
         Log.d(ContentValues.TAG, "DailyMenuActivity - onCreate is called ${year}-${month}-${day}")
         binding.textdate.setText(year + "년 " + month + "월 " + day + "일")
-        binding.textdate1.setText(year + "년 " + month + "월 " + day + "일 ")
+        binding.textdate1.setText("2022년 11월 23일")
 
 
         var strWeek: String? = null

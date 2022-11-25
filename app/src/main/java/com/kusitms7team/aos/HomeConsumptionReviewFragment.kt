@@ -181,7 +181,7 @@ class HomeConsumptionReviewFragment : Fragment() {
         val day = cal.get(Calendar.DATE).toString()
         Log.d(TAG, "DailyMenuActivity - onCreate is called ${year}-${month}-${day}")
         binding.textdate.setText(year + "년 " + month + "월 " + day + "일")
-        binding.textdate1.setText(year + "년 " + month + "월 " + day + "일 ")
+        binding.textdate1.setText(year + "년 " + month + "월 " + day + "일")
 
 
         var strWeek: String? = null
