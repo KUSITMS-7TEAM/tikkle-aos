@@ -19,6 +19,9 @@ class HomeConsumptionReviewFragment : Fragment() {
     lateinit var binding: FragmentHomeConsumptionReviewBinding
     lateinit var mainActivity: MainActivity
     val cal = Calendar.getInstance()
+    val week: Int = cal.get(Calendar.DAY_OF_WEEK)
+    var E: String? = "Null"
+    var Emotion: Int? = 0
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -35,10 +38,15 @@ class HomeConsumptionReviewFragment : Fragment() {
         //calendar
         val today: String? = doDayOfWeek()
 
-        var Emotion: Int? = 0
 
         //Emotion setting
         binding.choiceFace.visibility = View.INVISIBLE
+        binding.monFace.visibility = View.INVISIBLE
+        binding.tueFace.visibility = View.INVISIBLE
+        binding.thuFace.visibility = View.INVISIBLE
+        binding.friFace.visibility = View.INVISIBLE
+        binding.satFace.visibility = View.INVISIBLE
+        binding.sunFace.visibility = View.INVISIBLE
 
         binding.face1.setOnClickListener {
             binding.choiceFace.setImageResource(R.drawable.icn_consume_remind_face_icon_1)
@@ -116,8 +124,6 @@ class HomeConsumptionReviewFragment : Fragment() {
             binding.review2.visibility = View.VISIBLE
             tag = 9
         }
-
-
 
         return binding.root
     }
@@ -244,13 +250,90 @@ class HomeConsumptionReviewFragment : Fragment() {
             binding.btnChallenge.setOnClickListener {
                     mainActivity.moveToHomeChallenge()
             }
-            binding.beforeFace.setOnClickListener {
+            binding.setFace.setOnClickListener {
                 mainActivity.moveToBeforeChallenge()
             }
             binding.submit.setOnClickListener {
                 Toast.makeText(context, "소비 회고가 등록되었습니다.", Toast.LENGTH_SHORT).show()
+                if(week == 1) {
+                    choiceEmotion()
+                    binding.sunFace.visibility = View.VISIBLE
+                }
+                else if(week == 2) {
+                    choiceEmotion()
+                    binding.monFace.visibility = View.VISIBLE
+                }
+                else if(week == 3) {
+                    choiceEmotion()
+                    binding.tueFace.visibility = View.VISIBLE
+                }
+                else if(week == 4) {
+                    choiceEmotion()
+                    binding.wedFace.visibility = View.VISIBLE
+                }
+                else if(week == 5) {
+                    choiceEmotion()
+                    binding.thuFace.visibility = View.VISIBLE
+                }
+                else if(week == 6) {
+                    choiceEmotion()
+                    binding.friFace.visibility = View.VISIBLE
+                }
+                else if(week == 7) {
+                    choiceEmotion()
+                    binding.sunFace.visibility = View.VISIBLE
+                }
             }
         }
+    }
+
+    fun choiceEmotion(): String? {
+        if( Emotion == 1 ) {
+            binding.monFace.setImageResource(R.drawable.icn_consume_remind_face_icon_1)
+            binding.tueFace.setImageResource(R.drawable.icn_consume_remind_face_icon_1)
+            binding.wedFace.setImageResource(R.drawable.icn_consume_remind_face_icon_1)
+            binding.thuFace.setImageResource(R.drawable.icn_consume_remind_face_icon_1)
+            binding.friFace.setImageResource(R.drawable.icn_consume_remind_face_icon_1)
+            binding.satFace.setImageResource(R.drawable.icn_consume_remind_face_icon_1)
+            binding.sunFace.setImageResource(R.drawable.icn_consume_remind_face_icon_1)
+        }
+        else if (Emotion == 2){
+            binding.monFace.setImageResource(R.drawable.icn_consume_remind_face_icon_2)
+            binding.tueFace.setImageResource(R.drawable.icn_consume_remind_face_icon_2)
+            binding.wedFace.setImageResource(R.drawable.icn_consume_remind_face_icon_2)
+            binding.thuFace.setImageResource(R.drawable.icn_consume_remind_face_icon_2)
+            binding.friFace.setImageResource(R.drawable.icn_consume_remind_face_icon_2)
+            binding.satFace.setImageResource(R.drawable.icn_consume_remind_face_icon_2)
+            binding.sunFace.setImageResource(R.drawable.icn_consume_remind_face_icon_2)
+        }
+        else if (Emotion == 3){
+            binding.monFace.setImageResource(R.drawable.icn_consume_remind_face_icon_3)
+            binding.tueFace.setImageResource(R.drawable.icn_consume_remind_face_icon_3)
+            binding.wedFace.setImageResource(R.drawable.icn_consume_remind_face_icon_3)
+            binding.thuFace.setImageResource(R.drawable.icn_consume_remind_face_icon_3)
+            binding.friFace.setImageResource(R.drawable.icn_consume_remind_face_icon_3)
+            binding.satFace.setImageResource(R.drawable.icn_consume_remind_face_icon_3)
+            binding.sunFace.setImageResource(R.drawable.icn_consume_remind_face_icon_3)
+        }
+        else if (Emotion == 4){
+            binding.monFace.setImageResource(R.drawable.icn_consume_remind_face_icon_4)
+            binding.tueFace.setImageResource(R.drawable.icn_consume_remind_face_icon_4)
+            binding.wedFace.setImageResource(R.drawable.icn_consume_remind_face_icon_4)
+            binding.thuFace.setImageResource(R.drawable.icn_consume_remind_face_icon_4)
+            binding.friFace.setImageResource(R.drawable.icn_consume_remind_face_icon_4)
+            binding.satFace.setImageResource(R.drawable.icn_consume_remind_face_icon_4)
+            binding.sunFace.setImageResource(R.drawable.icn_consume_remind_face_icon_4)
+        }
+        else if (Emotion == 5){
+            binding.monFace.setImageResource(R.drawable.icn_consume_remind_face_icon_5)
+            binding.tueFace.setImageResource(R.drawable.icn_consume_remind_face_icon_5)
+            binding.wedFace.setImageResource(R.drawable.icn_consume_remind_face_icon_5)
+            binding.thuFace.setImageResource(R.drawable.icn_consume_remind_face_icon_5)
+            binding.friFace.setImageResource(R.drawable.icn_consume_remind_face_icon_5)
+            binding.satFace.setImageResource(R.drawable.icn_consume_remind_face_icon_5)
+            binding.sunFace.setImageResource(R.drawable.icn_consume_remind_face_icon_5)
+        }
+        return null
     }
 }
 
