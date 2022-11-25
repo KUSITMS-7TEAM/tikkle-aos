@@ -30,19 +30,20 @@
         <entry key="app/src/main/res/layout/activity_user_information3.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/activity_user_information5.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/fragment_banner.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/fragment_before_consumption.xml" value="0.31855903908058447" />
         <entry key="app/src/main/res/layout/fragment_challemge_prove1.xml" value="0.3463789447399709" />
         <entry key="app/src/main/res/layout/fragment_challemge_prove2.xml" value="0.1890625" />
         <entry key="app/src/main/res/layout/fragment_challemge_prove3.xml" value="0.37817535400390623" />
         <entry key="app/src/main/res/layout/fragment_challenge.xml" value="0.3333333333333333" />
-        <entry key="app/src/main/res/layout/fragment_challenge_consumption.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/fragment_challenge_consumption.xml" value="0.5270980834960938" />
         <entry key="app/src/main/res/layout/fragment_challenge_consumption_detail.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/fragment_challenge_detail.xml" value="0.35161895751953126" />
         <entry key="app/src/main/res/layout/fragment_challenge_page.xml" value="0.3333333333333333" />
-        <entry key="app/src/main/res/layout/fragment_feed.xml" value="0.3172037760416667" />
+        <entry key="app/src/main/res/layout/fragment_feed.xml" value="0.32423756019261635" />
         <entry key="app/src/main/res/layout/fragment_feed_item.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.48660125732421877" />
         <entry key="app/src/main/res/layout/fragment_home_challenge.xml" value="0.32432432432432434" />
-        <entry key="app/src/main/res/layout/fragment_home_consumption_review.xml" value="0.2642639787554094" />
+        <entry key="app/src/main/res/layout/fragment_home_consumption_review.xml" value="0.45791625976562506" />
         <entry key="app/src/main/res/layout/fragment_mypage.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/fragment_register.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/item_challenge.xml" value="0.3333333333333333" />

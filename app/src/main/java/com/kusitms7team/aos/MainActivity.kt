@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.challengeFragment -> {
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.main_frm, ChallengeFragment())
+                        .replace(R.id.main_frm, ChallengePageFragment())
                         .commitAllowingStateLoss()
                     return@setOnItemSelectedListener true
                 }
@@ -66,6 +66,11 @@ class MainActivity : AppCompatActivity() {
     fun moveToHomeChallenge() {
         supportFragmentManager.beginTransaction()
             .replace(R.id.main_frm, HomeChallengeFragment())
+            .commitAllowingStateLoss()
+    }
+    fun moveToBeforeChallenge() {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.main_frm, BeforeConsumptionFragment())
             .commitAllowingStateLoss()
     }
 
@@ -124,6 +129,24 @@ class MainActivity : AppCompatActivity() {
                 supportFragmentManager
                     .beginTransaction()
                     .replace(R.id.main_frm, FeedFragment())
+                    .commitAllowingStateLoss()
+            }
+
+            2 -> {
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.main_frm, ChallengeDetailFragment())
+                    .commitAllowingStateLoss()
+            }
+        }
+    }
+
+    fun changeChallengeFragment(index: Int) {
+        when (index) {
+            1 -> {
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.main_frm, ChallengeConsumptionFragment())
                     .commitAllowingStateLoss()
             }
 
