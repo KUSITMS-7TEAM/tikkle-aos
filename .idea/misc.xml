@@ -3,8 +3,58 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../layout/custom_preview.xml" value="0.329412841796875" />
+        <entry key="app/src/main/res/drawable-v24/bg_callendar_border.xml" value="0.1835" />
+        <entry key="app/src/main/res/drawable-v24/bg_userinformation_border.xml" value="0.1835" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2035" />
+        <entry key="app/src/main/res/drawable/btm_color_selector.xml" value="0.161" />
+        <entry key="app/src/main/res/drawable/btm_consumptionreview_selct.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/button_background_tikkle_color.xml" value="0.161" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.3024734497070312" />
+        <entry key="app/src/main/res/drawable/calendar_border1.xml" value="0.208" />
+        <entry key="app/src/main/res/drawable/calendar_select_border.xml" value="0.1725" />
+        <entry key="app/src/main/res/drawable/calendar_select_border1.xml" value="0.208" />
+        <entry key="app/src/main/res/drawable/calender_border.xml" value="0.1735" />
+        <entry key="app/src/main/res/drawable/callender_border.xml" value="0.1835" />
+        <entry key="app/src/main/res/drawable/callender_select _border.xml" value="0.123" />
+        <entry key="app/src/main/res/drawable/dotted_border.xml" value="0.2035" />
+        <entry key="app/src/main/res/drawable/dotted_line.xml" value="0.2035" />
+        <entry key="app/src/main/res/drawable/edittext_border.xml" value="0.2035" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1835" />
+        <entry key="app/src/main/res/drawable/layout_border.xml" value="0.2035" />
+        <entry key="app/src/main/res/drawable/main_btm_consumptionreview_selector.xml" value="0.1185" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.2968002319335938" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.32591461181640624" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.20104166666666667" />
+        <entry key="app/src/main/res/layout/activity_user_information1.xml" value="0.12916666666666668" />
+        <entry key="app/src/main/res/layout/activity_user_information2.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/activity_user_information3.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/activity_user_information5.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/fragment_banner.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/fragment_before_consumption.xml" value="0.31855903908058447" />
+        <entry key="app/src/main/res/layout/fragment_challemge_prove1.xml" value="0.3463789447399709" />
+        <entry key="app/src/main/res/layout/fragment_challemge_prove2.xml" value="0.29295654296875007" />
+        <entry key="app/src/main/res/layout/fragment_challemge_prove3.xml" value="0.37817535400390623" />
+        <entry key="app/src/main/res/layout/fragment_challenge.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/fragment_challenge_consumption.xml" value="0.5270980834960938" />
+        <entry key="app/src/main/res/layout/fragment_challenge_consumption_detail.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_challenge_detail.xml" value="0.35161895751953126" />
+        <entry key="app/src/main/res/layout/fragment_challenge_page.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/fragment_feed.xml" value="0.32423756019261635" />
+        <entry key="app/src/main/res/layout/fragment_feed_item.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.48660125732421877" />
+        <entry key="app/src/main/res/layout/fragment_home_challenge.xml" value="0.32432432432432434" />
+        <entry key="app/src/main/res/layout/fragment_home_consumption_review.xml" value="0.39942169189453136" />
+        <entry key="app/src/main/res/layout/fragment_mypage.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/fragment_register.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/item_challenge.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/item_challenge_detail.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/item_challenge_detail_list.xml" value="0.1890625" />
+        <entry key="app/src/main/res/layout/item_challenge_list.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/item_enabled_challenge.xml" value="0.32137298583984375" />
+        <entry key="app/src/main/res/layout/item_unabled_challenge.xml" value="0.8637725830078126" />
+        <entry key="app/src/main/res/layout/sample_splash_animation.xml" value="0.20104166666666667" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.4032258064516129" />
+        <entry key="app/src/main/res/menu/bottom_navigation.xml" value="0.16979166666666667" />
       </map>
     </option>
   </component>
@@ -14,5 +64,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.264" />
+      </ProjectState>
+    </option>
   </component>
 </project>

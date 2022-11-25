@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChallengeConsumptionDetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/main_white"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/btn_back"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/main_white"
+            android:font="@font/pretendardsemibold"
+            android:gravity="center"
+            android:text="소비/지출"
+            android:textColor="@color/main_Black"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="413dp"
+            android:layout_height="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleText"
+            app:srcCompat="@drawable/ic_title_line" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="692dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_ex2"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/textCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:font="@font/pretendardmedium"
+            android:text="챌린지 > 소비/지출 > 허리띠를 조이자 챌린지"
+            android:textColor="@color/gray_700"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+        <TextView
+            android:id="@+id/challengeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:font="@font/pretendardsemibold"
+            android:text="허리띠를 조이자 챌린지"
+            android:textStyle="bold"
+            android:textColor="@color/main_Black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textCategory" />
+
+        <TextView
+            android:id="@+id/challengeFounder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:font="@font/pretendardmedium"
+            android:text="개설자: MoaMoa"
+            android:textColor="@color/gray_600"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/challengeName" />
+
+        <TextView
+            android:id="@+id/btnchallengeFounder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:font="@font/pretendardmedium"
+            android:text="개설자 프로필 구경하기"
+            android:textColor="@color/main_Orange"
+            android:textSize="9sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/challengeFounder" />
+
+        <TextView
+            android:id="@+id/challengeIntroduction1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:font="@font/pretendardsemibold"
+            android:text="챌린지 소개"
+            android:textStyle="bold"
+            android:textColor="@color/main_Black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnchallengeFounder" />
+
+        <TextView
+            android:id="@+id/challengeIntroduction2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:font="@font/pretendardmedium"
+            android:text="여러분 오늘은 얼마나 아끼셨나요? 다같이 졸라 맵시다, 허리띠! 이 챌린지는 각자 소비를 아끼는 다양한 방식을 공유하며 새로운 방식에 도전해보는 챌린지입니다. 서로 정보 공유가 가능하고 소비 절약에 도전해볼 수 있습니다."
+            android:textColor="@color/main_Black"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/challengeIntroduction1" />
+
+
+        <TextView
+            android:id="@+id/challengeSuggestion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:font="@font/pretendardsemibold"
+            android:text="추천 대상"
+            android:textStyle="bold"
+            android:textColor="@color/main_Black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/challengeIntroduction2" />
+
+        <TextView
+            android:id="@+id/challengeSuggestion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="1dp"
+            android:font="@font/pretendardmedium"
+            android:text="이런 분들에게 추천드려요"
+            android:textColor="@color/main_Gray"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/challengeSuggestion1" />
+
+        <TextView
+            android:id="@+id/challengeSuggestion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="1dp"
+            android:font="@font/pretendardmedium"
+            android:text="이런 분들에게 추천드려요"
+            android:textColor="@color/main_Gray"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/challengeStatus1" />
+
+        <TextView
+            android:id="@+id/challengeSuggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="7dp"
+            android:font="@font/pretendardmedium"
+            android:text="과소비, 충동소비를 많이 하시는 분 🥶 \n남들은 돈을 어떻게 절약하는 지 알고 싶으신 분 🤔 \n이번 달 카드비 폭탄 맞을 것 같으신 분 😭"
+            android:textColor="@color/main_Black"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/challengeSuggestion2" />
+
+        <TextView
+            android:id="@+id/challengeStatus1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:font="@font/pretendardsemibold"
+            android:text="참여 현황"
+            android:textStyle="bold"
+            android:textColor="@color/main_Black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/challengeSuggestion" />
+
+        <TextView
+            android:id="@+id/challengeStatus2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="7dp"
+            android:font="@font/pretendardmedium"
+            android:text="현재 "
+            android:textColor="@color/main_Black"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/challengeSuggestion3" />
+
+        <TextView
+            android:id="@+id/challengeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:font="@font/pretendardmedium"
+            android:text="3,002"
+            android:textColor="@color/main_Orange"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/challengeStatus2"
+            app:layout_constraintTop_toBottomOf="@+id/challengeSuggestion3" />
+
+        <TextView
+            android:id="@+id/challengeStatus3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:font="@font/pretendardmedium"
+            android:text="명이 참여 중이에요."
+            android:textColor="@color/main_Black"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/challengeCount"
+            app:layout_constraintTop_toBottomOf="@+id/challengeSuggestion3" />
+
+        <ImageView
+            android:id="@+id/btnJoin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/main_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/challengeStatus3"
+            app:srcCompat="@drawable/btn_join_challenge"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -39,7 +39,7 @@
             android:gravity="center"
             android:text="회원가입"
             android:textColor="@color/main_Black"
-            android:textSize="20sp"
+            android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -58,13 +58,12 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
-        android:layout_width="421dp"
-        android:layout_height="675dp"
+        android:layout_width="389dp"
+        android:layout_height="748dp"
         android:paddingLeft="27dp"
         android:paddingRight="27dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
@@ -97,8 +96,8 @@
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
             android:backgroundTint="#ECECEC"
-            android:hint="닉네임 입력"
             android:font="@font/pretendardmedium"
+            android:hint="닉네임 입력"
             android:maxLength="10"
             android:textColor="@color/main_Black"
             android:textSize="14sp"
@@ -174,7 +173,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/btnImg1"
             app:layout_constraintTop_toBottomOf="@+id/textProfileImg"
-            app:srcCompat="@drawable/ic_profile2"
+            app:srcCompat="@drawable/ic_profile2_1"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
