@@ -34,7 +34,7 @@ class ChallengeConsumptionFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         with (binding) {
             //버튼을 누르면 SecondFragment로 이동
-            binding.btnNext.setOnClickListener {
+            binding.btnNext3.setOnClickListener {
                 mainActivity.changeChallengeFragment(2)
             }
         }

@@ -190,7 +190,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/img_ex2"
+                    android:src="@drawable/challeng_ex1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -284,7 +284,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/img_ex2"
+                    android:src="@drawable/challeng_ex2"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -378,7 +378,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/img_ex2"
+                    android:src="@drawable/challeng_ex3"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -471,7 +471,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/img_ex2"
+                    android:src="@drawable/challeng_ex4"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -484,7 +484,7 @@
                     android:layout_marginStart="19dp"
                     android:layout_marginTop="9dp"
                     android:fontFamily="@font/pretendardmedium"
-                    android:text="해 먹었어요 챌린지"
+                    android:text="허리띠를 조이자 챌린지"
                     android:textColor="@color/main_Black"
                     android:textSize="12dp"
                     app:layout_constraintStart_toEndOf="@+id/img3"
@@ -533,7 +533,7 @@
                     android:layout_marginStart="19dp"
                     android:layout_marginTop="5dp"
                     android:fontFamily="@font/pretendardmedium"
-                    android:text="요즘 외식 물가가 너무 비싸죠?\n다 같이 집밥 만들어 먹으면서 돈 아낍시다!"
+                    android:text="여러분 오늘은 얼마를 아끼셨나요? \n 다 같이 졸라 매봅시다, 허리띠!"
                     android:textColor="@color/gray_600"
                     android:textSize="9dp"
                     app:layout_constraintStart_toEndOf="@+id/img3"

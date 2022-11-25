@@ -174,7 +174,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/btnImg1"
             app:layout_constraintTop_toBottomOf="@+id/textProfileImg"
-            app:srcCompat="@drawable/ic_profile2"
+            app:srcCompat="@drawable/ic_profile2_1"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton

@@ -153,7 +153,7 @@ class MainActivity : AppCompatActivity() {
             2 -> {
                 supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.main_frm, ChallengeDetailFragment())
+                    .replace(R.id.main_frm, ChallengeConsumptionDetailFragment())
                     .commitAllowingStateLoss()
             }
         }
