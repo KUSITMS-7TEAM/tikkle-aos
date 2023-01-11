@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserInformation3Activity">
-
+    tools:context=".SignUpActivity">
     <!-- 메뉴바 -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -51,7 +50,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/ic_title_line_progress_2" />
+            app:srcCompat="@drawable/ic_title_line" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -66,94 +65,95 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <TextView
-            android:id="@+id/textSaving"
+            android:id="@+id/textEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:font="@font/pretendardmedium"
-            android:text="한 달에 저축할 비용은 얼마인가요?"
+            android:text="이메일을 입력해주세요."
             android:textColor="@color/main_Black"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textSaving2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:font="@font/pretendardmedium"
-            android:text="추후에 마이페이지에서 수정이 가능합니다."
-            android:textColor="@color/main_Gray"
-            android:textSize="9sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textSaving" />
-
-
         <EditText
-            android:id="@+id/enterSaving"
+            android:id="@+id/enterEmail"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="5dp"
             android:backgroundTint="#ECECEC"
             android:font="@font/pretendardmedium"
-            android:hint="ex. 1,000,000"
+            android:hint="Tikkle@gmail.com"
             android:textColor="@color/main_Black"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.32"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textSaving2"
+            app:layout_constraintTop_toBottomOf="@+id/textEmail"
             tools:ignore="TouchTargetSizeCheck" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textPwd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="45dp"
             android:font="@font/pretendardmedium"
-            android:text="원"
+            android:text="비밀번호를 입력해주세요."
+            android:layout_marginTop="10dp"
+            android:textColor="@color/main_Black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enterEmail" />
+
+        <EditText
+            android:id="@+id/enterPwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="#ECECEC"
+            android:font="@font/pretendardmedium"
+            android:hint=""
             android:textColor="@color/main_Black"
             android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="@+id/enterSaving"
-            app:layout_constraintEnd_toEndOf="@+id/enterSaving"
-            app:layout_constraintTop_toTopOf="@+id/enterSaving" />
+            app:layout_constraintTop_toBottomOf="@+id/textPwd"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="27dp" />
 
-        <ImageButton
-            android:id="@+id/btnErase"
-            android:layout_width="13dp"
-            android:layout_height="16dp"
-            android:layout_marginEnd="15dp"
-            android:background="@color/main_white"
-            app:layout_constraintBottom_toBottomOf="@+id/enterSaving"
-            app:layout_constraintEnd_toEndOf="@+id/enterSaving"
-            app:layout_constraintTop_toTopOf="@+id/enterSaving"
-            app:srcCompat="@drawable/btn_text_erase"
-            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
-
-
-        <ImageButton
-            android:id="@+id/btnNext"
+        <TextView
+            android:id="@+id/textPwd2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="125dp"
+            android:font="@font/pretendardmedium"
+            android:text="비밀번호를 재입력해주세요."
+            android:layout_marginTop="10dp"
+            android:textColor="@color/main_Black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enterPwd" />
+
+        <EditText
+            android:id="@+id/enterPwd2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="#ECECEC"
+            android:font="@font/pretendardmedium"
+            android:hint=""
+            android:textColor="@color/main_Black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/textPwd2"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="27dp" />
+
+        <ImageButton
+            android:id="@+id/btnSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
             android:background="@color/main_white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/enterSaving"
+            app:layout_constraintTop_toBottomOf="@+id/enterPwd2"
             app:srcCompat="@drawable/btn_next_enabled"
             tools:ignore="SpeakableTextPresentCheck" />
 
-        <ImageButton
-            android:id="@+id/btnHold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="177dp"
-            android:background="@color/main_white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/enterSaving"
-            app:srcCompat="@drawable/btn_next_hold"
-            tools:ignore="SpeakableTextPresentCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
