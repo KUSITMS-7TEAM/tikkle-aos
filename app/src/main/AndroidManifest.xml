@@ -16,6 +16,13 @@
         android:theme="@style/Theme.Tikkle"
         tools:targetApi="31">
         <activity
+            android:name=".SignUpActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".EnabledChallengeItem"
             android:exported="false">
             <meta-data
@@ -32,12 +39,11 @@
         <activity
             android:name=".SplashActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".UserInformation5Activity"
@@ -77,11 +83,10 @@
 
         <activity
             android:name=".LoginActivity"
-            android:exported="true" >
-
-        <meta-data
-            android:name="android.app.lib_name"
-            android:value="" />
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
 
         <meta-data
@@ -92,23 +97,20 @@
             android:name=".MainActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustPan">
-
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-<!--                 Redirect URI: "kakao${NATIVE_APP_KEY}://oauth"-->
+                <!-- Redirect URI: "kakao${NATIVE_APP_KEY}://oauth" -->
                 <data
                     android:host="oauth"
                     android:scheme="kakao4f444e8815868b65a842725e9610b1d0" />

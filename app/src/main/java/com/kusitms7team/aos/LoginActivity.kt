@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import com.kakao.sdk.auth.model.OAuthToken
 import com.kakao.sdk.common.KakaoSdk
@@ -16,6 +17,7 @@ import com.kusitms7team.aos.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
+    lateinit var login_sign_up_tv: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,11 +25,28 @@ class LoginActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        binding.SignBtn.setOnClickListener {
+        binding.startKakaoBtn.setOnClickListener {
+
+            val intent = Intent(this, UserInformation1Activity::class.java)
+
+            finish()
+            startActivity(intent)
+
+            /*
             supportFragmentManager.beginTransaction()
                 .replace(R.id.frame, RegisterFragment())
                 .commitAllowingStateLoss()
+            */
         }
+
+        login_sign_up_tv = findViewById(R.id.login_sign_up_tv)
+        login_sign_up_tv.setOnClickListener {
+
+            val intent = Intent(this, SignUpActivity::class.java)
+            finish()
+            startActivity(intent)
+        }
+
 
 //        // 로그인 정보 확인
 //        UserApiClient.instance.accessTokenInfo { tokenInfo, error ->
@@ -102,6 +121,7 @@ class LoginActivity : AppCompatActivity() {
 //        }
     }
 }
+
 
 
 
